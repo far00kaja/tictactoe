@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  color: #0a0a0a;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.68;
+}
+
+/* platform game */
+#arena {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.big-cell {
+  background-color: #0a0a0a30;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+  background-color: red;
+  width: 100%;
+  height: 33.3333%;
+  justify-content: center;
+}
+.small-cell {
+  /* flex-direction: column; */
+  background-color: #f88a00;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* margin: 1px; */
+}
+.top {
+  border-top: 0px;
+  border-bottom: 2px solid #000;
+}
+.marked{
+    background-color: #0a0a0a30;
+}
+.middle {
+  /* border-top: 1px solid #000; */
+  /* border-bottom: 1px solid #000; */
+}
+.bottom {
+  border-top: 2px solid #000;
+}
+.left {
+  /* border:2px solid #000 !important; */
+  /* border-left: 20px; */
+}
+.mid {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.right {
+}
+.small-cell a {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.break {
+  flex-basis: 100%;
+}
+/* end of platform game */
+
+/* box sizing */
+.header {
+  width: 100%;
+  min-height: 50px;
+  background: #f88a00;
+}
+.header .title {
+  color: #ffffff;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  /* height: auto; */
+  /* min-height: 100px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  /* height: auto; */
+  /* min-height: 150px; */
+  width: 100%;
+  border: 1px solid #0a0a0a30;
+  border-radius: 10px;
+}
+/* end of box sizing */
+
+/* setting button */
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 0px solid #0a0a0a30;
+}
+.btn-md {
+  min-height: 40px;
+  min-width: 100px;
+}
+.btn-primary {
+  background-color: #f88a00;
+  color: #ffffff;
+}
+/* end ofsetting button */
+
+/* setting position */
+.center {
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 50%;
+}
+.float-right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+/* end of setting position */
+
+/* setting padding */
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.pt-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.px-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* end of setting padding */
+
+/* Form control */
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #0a0a0a30;
+}
+.form-control option {
+  height: 20px !important;
+  padding-top: 10px;
+}
+/* end of form control */
+
+/* font styling */
+.bold {
+  font-weight: 600;
+}
+/* end of font styling */
