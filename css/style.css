@@ -33,6 +33,7 @@
 }
 .small-cell {
   /* flex-direction: column; */
+  cursor: pointer;
   background-color: #f88a00;
   width: 100%;
   height: 100%;
