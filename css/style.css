@@ -7,7 +7,7 @@
 }
 
 /* platform game */
-#arena {
+.arena {
   display: flex;
 }
 .hide {
@@ -47,23 +47,23 @@
 .marked{
     background-color: #0a0a0a30;
 }
-.middle {
+/* .middle { */
   /* border-top: 1px solid #000; */
   /* border-bottom: 1px solid #000; */
-}
+/* } */
 .bottom {
   border-top: 2px solid #000;
 }
-.left {
+/* .left { */
   /* border:2px solid #000 !important; */
   /* border-left: 20px; */
-}
+/* } */
 .mid {
   border-left: 2px solid #000;
   border-right: 2px solid #000;
 }
-.right {
-}
+/* .right {
+} */
 .small-cell a {
   text-align: right;
   font-size: 1.4rem;
@@ -154,6 +154,9 @@
 .px-1 {
   padding-left: 10px;
   padding-right: 10px;
+}
+.m-1{
+  margin: 10px;
 }
 /* end of setting padding */
 

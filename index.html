@@ -12,65 +12,56 @@
       <h2 class="title">Welcome to Tic Tac Toe Multiplayer Game</h2>
     </div>
     <div class="container p-1">
+      <button class="btn btn-md btn-primary p-1 m-1 float-right" id="btn-config" style="z-index: 4;" type="submit" onclick="minMaxConfig()">Hide Configuration</button>
+      <div class="clear"></div>
+     <div id="config">
         <div class="box p-1">
-          <h3 class="title">Configuration:</h3>
-          <select name="scale" class="form-control" id="scale">
-              <option value="3">3x3</option>
-              <option value="9">9x9</option>
-              <option value="81">81x81</option>
-          </select>
-          <div class="p-2">
-          <h3>Player1</h3>
-          <label for="name" >Name:</label>
-          <input type="text" id="player1" class="form-control" placeholder="Insert Name">
-          <label for="symbol">Symbol:</label>
-          <span class="symbol bold" id="player1Symbol">X</span>
-        </div>
-        <div class="p-2">
-            <h3>Player2</h3>
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" placeholder="Insert Name" id="player2">
+            <h3 class="title">Configuration:</h3>
+            <!-- <select name="scale" class="form-control" id="scale">
+                <option value="3">3x3</option>
+                <option value="4">3x3</option>
+                <option value="5">3x3</option>
+                <option value="9">9x9</option>
+                <option value="81">81x81</option>
+              </select> -->
+              <label for="name" >Set Scale:</label>
+              <input type="number" min="1" step="1" id="scale" class="form-control" placeholder="ex:5 (will generate 5x5)">
+            <div class="p-2">
+            <h3>Player1</h3>
+            <label for="name" >Name:</label>
+            <input type="text" id="player1" class="form-control" placeholder="Insert Name">
             <label for="symbol">Symbol:</label>
-            <span class="symbol bold" id="player2Symbol">O</span>
+            <span class="symbol bold" id="player1Symbol">X</span>
+          </div>
+          <div class="p-2">
+              <h3>Player2</h3>
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" placeholder="Insert Name" id="player2">
+              <label for="symbol">Symbol:</label>
+              <span class="symbol bold" id="player2Symbol">O</span>
+          </div>
+            <button class="btn btn-md btn-primary float-right" onclick="startGame()" type="button">StartGame</button>
+            <button class="btn btn-md btn-primary float-right" onclick="restart()" type="button" style="margin-right: 10px;">Restart Game</button>
+            <div class="clear"></div>
         </div>
-          <button class="btn btn-md btn-primary float-right" onclick="startGame()" type="button">Set</button>
-          <button class="btn btn-md btn-primary float-right" onclick="restart()" type="button" style="margin-right: 10px;">Restart Game</button>
-          <div class="clear"></div>
-      </div>
+
+     </div> 
     </div>
     <div class="container p-1">
+        <h3 class="bold">
+          Total Turn: <span id="countTurn"></span></h3>
         <h3 class="bold">Player1 Score: <span id="scoreP1"></span></h3>
         <h3 class="bold">Player2 Score: <span id="scoreP2"></span></h3>
         <h3 class="bold">Now Turn: <span id="turn"></span></h3>
     </div>
+    <div class="container hide" id="button-continue">
+      <button class="btn btn-md btn-primary" onclick="nextGame()" type="button" style="margin-right: 10px;">Continue</button>
+  </div>
+<div class="clear"></div>
     <div class="container p-1 center" id="platform">
-        <div id="arena">
-            <!-- <div class="big-cell">
-                <div class="field">
-                    <div class="small-cell top left" data-val="0"></div>
-                    <div class="small-cell top mid" data-val="1"></div>
-                    <div class="small-cell top right" data-val="2"></div>
-                </div>
-                <div class="field">
-                    <div class="small-cell middle left" data-val="3"></div>
-                    <div class="small-cell middle mid" data-val="4"></div>
-                    <div class="small-cell middle right" data-val="5"></div>
-                </div>
-                <div class="field">
-                    <div class="small-cell bottom left" data-val="6"></div>
-                    <div class="small-cell bottom mid" data-val="7"></div>
-                    <div class="small-cell bottom right" data-val="8"></div>
-                </div>
-                </div> -->
 
-            </div>
-            <div class="container">
-                <button class="btn btn-md btn-primary" onclick="nextGame()" type="button" style="margin-right: 10px;">Continue</button>
-            </div>
-          <div class="clear"></div>
- 
-                </div>
-                </body>
+    </div>
+  </body>
                 
     <script src="js/index.js"></script>
   </body>
