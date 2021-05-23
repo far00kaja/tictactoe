@@ -11,4 +11,4 @@ How to Play The Game
 2.	Input scale form with a numeric format (ex:1)
 3.	Input player1 name
 4.	Input player2 name
-5.	Click 
+5.	Click Start Game
