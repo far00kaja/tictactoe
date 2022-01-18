@@ -336,10 +336,10 @@ function startGame() {
 
     document.getElementById('scoreP1').innerHTML = player1.score;
     document.getElementById('scoreP2').innerHTML = player2.score;
-    scale = parseInt(document.getElementById('scale').value);
+    scale =  3 ** (parseInt(document.getElementById('scale').value)-1);
   }
   setScale1(scale);
-  countTurn = scale * scale * 9;
+  countTurn = scale * 9;
   document.getElementById('countTurn').innerHTML = countTurn;
 
   canStartGame = true;
