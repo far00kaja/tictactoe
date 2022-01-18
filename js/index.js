@@ -36,6 +36,7 @@ const rulesOfWin = [
 //when url loaded
 window.addEventListener('load', function () {
   //if data has session before
+  minMaxConfig();
   if (sessionStorage.player1 !== undefined) {
     document.getElementById('player1').value = sessionStorage.player1;
   }
@@ -290,13 +291,13 @@ function startGame() {
   console.log('masuk');
   document.getElementById('platform').innerHTML = '';
   if (getNext !== true) {
-    if (
-      document.getElementById('scale').value === null ||
-      document.getElementById('scale').value == ''
-    ) {
-      alert('Scale cannot be null!');
-      return false;
-    }
+    // if (
+    //   document.getElementById('scale').value === null ||
+    //   document.getElementById('scale').value == ''
+    // ) {
+    //   alert('Scale cannot be null!');
+    //   return false;
+    // }
     if (
       document.getElementById('player1').value === null ||
       document.getElementById('player1').value == ''
@@ -336,10 +337,10 @@ function startGame() {
 
     document.getElementById('scoreP1').innerHTML = player1.score;
     document.getElementById('scoreP2').innerHTML = player2.score;
-    scale =  3 ** (parseInt(document.getElementById('scale').value)-1);
+    scale =  1;// ** (parseInt(document.getElementById('scale').value)-1);
   }
   setScale1(scale);
-  countTurn = scale * 9;
+  countTurn = 1 * 9;
   document.getElementById('countTurn').innerHTML = countTurn;
 
   canStartGame = true;
